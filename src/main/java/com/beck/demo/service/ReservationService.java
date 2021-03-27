@@ -1,12 +1,16 @@
 package com.beck.demo.service;
 
+import com.beck.demo.entity.Reservation;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.beck.demo.entities.Reservation;
 
 /**
- * @author Pengliang_Zhang
- * @date 2021-03-22 3:44 p.m.
+ * <p>
+ *  Service
+ * </p>
+ *
+ * @author MyBatisPlus Generator
+ * @since 2021-03-27
  */
 public interface ReservationService extends IService<Reservation> {
-    String getReservation();
+
 }

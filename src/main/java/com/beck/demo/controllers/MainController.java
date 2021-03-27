@@ -1,6 +1,5 @@
 package com.beck.demo.controllers;
 
-import com.beck.demo.service.ReservationService;
 import io.swagger.annotations.*;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,8 +13,6 @@ import javax.annotation.Resource;
 @RestController
 @RequestMapping("/main")
 public class MainController {
-    @Resource
-    private ReservationService reservationService;
     /**
      *
      *
@@ -25,6 +22,6 @@ public class MainController {
     @GetMapping("/basic")
     @ApiOperation("Get basic info")
     public String getBasicInfo() {
-        return reservationService.getReservation();
+        return "";//reservationService.getReservation();
     }
 }
